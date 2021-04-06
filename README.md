@@ -31,4 +31,18 @@
   - чистота кода;
   - наличие .env
 
+# INSTALLATION
+
+## AFTER GIT CLONE
+
+   - cd /src
+   - composer update
+   - cd ../
+   - docker-compose up -d --build
+   - docker-compose exec php php artisan migrate
+   - docker-compose exec php php artisan db:seed
+
+## NOTES
+
+  ### script will start on 127.0.0.1:8088
 
